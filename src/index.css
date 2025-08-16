@@ -8,35 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* STI College Lucena Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 11% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 11% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 11% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* STI Blue Primary */
+    --primary: 210 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 100% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* STI Orange Accent */
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 24 100% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Light Blue Backgrounds */
+    --secondary: 208 100% 97%;
+    --secondary-foreground: 210 11% 15%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 11% 96%;
+    --muted-foreground: 210 11% 46%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status Colors */
+    --success: 134 61% 41%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 100% 51%;
+    --warning-foreground: 210 11% 15%;
+    
+    --destructive: 354 70% 54%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 210 100% 40%;
 
-    --radius: 0.5rem;
+    /* Design System Enhancements */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 40%), hsl(210 100% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(24 100% 50%), hsl(24 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 40%), hsl(24 100% 50%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(208 100% 99%));
+    
+    --shadow-soft: 0 2px 8px -1px hsl(210 100% 40% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(210 100% 40% / 0.12);
+    --shadow-strong: 0 8px 32px -8px hsl(210 100% 40% / 0.16);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
