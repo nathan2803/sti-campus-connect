@@ -53,13 +53,14 @@ const Navigation = () => {
               <Calendar className="h-4 w-4 mr-2" />
               Dashboard
             </Button>
-            <Button variant="ghost" size="sm" className="text-foreground hover:bg-secondary">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="text-foreground hover:bg-secondary"
+              onClick={() => navigate('/reservations')}
+            >
               <Building className="h-4 w-4 mr-2" />
-              Rooms
-            </Button>
-            <Button variant="ghost" size="sm" className="text-foreground hover:bg-secondary">
-              <Package className="h-4 w-4 mr-2" />
-              Equipment
+              Reservations
             </Button>
           </div>
 
@@ -126,13 +127,13 @@ const Navigation = () => {
               <Calendar className="h-4 w-4 mr-3" />
               Dashboard
             </Button>
-            <Button variant="ghost" className="w-full justify-start">
+            <Button 
+              variant="ghost" 
+              className="w-full justify-start"
+              onClick={() => navigate('/reservations')}
+            >
               <Building className="h-4 w-4 mr-3" />
-              Rooms
-            </Button>
-            <Button variant="ghost" className="w-full justify-start">
-              <Package className="h-4 w-4 mr-3" />
-              Equipment
+              Reservations
             </Button>
             {isAdmin && (
               <Button 

@@ -3,8 +3,11 @@ import HeroSection from "@/components/HeroSection";
 import QuickAccessCard from "@/components/QuickAccessCard";
 import StatCard from "@/components/StatCard";
 import { Building, Package, Calendar, Clock, Users, CheckCircle, AlertTriangle, XCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -54,6 +57,7 @@ const Index = () => {
               icon={Building}
               buttonText="Browse Rooms"
               variant="primary"
+              onClick={() => navigate('/reservations')}
             />
             <QuickAccessCard
               title="Request Equipment"
@@ -61,6 +65,7 @@ const Index = () => {
               icon={Package}
               buttonText="View Equipment"
               variant="accent"
+              onClick={() => navigate('/reservations')}
             />
             <QuickAccessCard
               title="View Schedule"
@@ -68,6 +73,7 @@ const Index = () => {
               icon={Calendar}
               buttonText="Open Calendar"
               variant="success"
+              onClick={() => navigate('/reservations')}
             />
           </div>
         </div>
